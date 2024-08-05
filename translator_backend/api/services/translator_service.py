@@ -1,5 +1,5 @@
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, AutoProcessor, SeamlessM4TModel
-from app.settings import settings
+from api.settings import settings
 
 class Translator:
     def __init__(self, src_lang, tgt_lang):

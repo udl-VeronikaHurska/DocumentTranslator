@@ -3,7 +3,7 @@ from docx import Document
 from io import BytesIO
 import zipfile
 import olefile
-from app.services.translator_service import Translator
+from api.services.translator_service import Translator
 from fastapi import HTTPException
 
 class XMLProcessor:

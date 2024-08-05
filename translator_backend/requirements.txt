@@ -10,3 +10,5 @@ uvicorn
 python-multipart
 olefile
 docx
+requests
+aiogram
