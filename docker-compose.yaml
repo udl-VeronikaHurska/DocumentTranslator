@@ -18,7 +18,7 @@ services:
     image: telegram_bot_image
     container_name: telegram_bot_1
     environment:
-      - TELEGRAM_BOT_TOKEN=7317005731:AAHXdIWVowWZ1OV6ErujJDH-5WSBVWso8iE
+      - TELEGRAM_BOT_TOKEN=
     volumes:
       - ./telegram_bot:/telegram_bot
     restart: always
