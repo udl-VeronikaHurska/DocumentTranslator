@@ -1,0 +1,12 @@
+transformers
+pdfplumber==0.10.3
+python_docx==1.1.0
+pytesseract==0.3.10
+sacremoses
+sentencepiece
+torch
+fastapi
+uvicorn
+python-multipart
+olefile
+docx
