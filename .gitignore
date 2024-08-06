@@ -1,0 +1,4 @@
+.env
+translator_backend/api/services/__pycache__
+translator_backend/api/__pycache__
+translator_backend/api/routes/__pycache__
