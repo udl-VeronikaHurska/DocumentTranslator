@@ -23,8 +23,13 @@ TRANSLATION_API_URL = 'http://translator_backend:8000/translate_document'
 # Define translation options
 translation_options = {
     '/de_ua': ('german', 'ukrainian'),
-    '/en_ua': ('english', 'ukrainian')
+    '/en_ua': ('english', 'ukrainian'),
+    '/ua_en':('ukrainian', 'english'),
+    '/ua_de':('ukrainian', 'german'),
+    '/de_en':('german', 'english'),
+    '/en_de':('english', 'german')
 }
+
 
 # Handler for the /start command
 @dp.message_handler(commands=['start'])
