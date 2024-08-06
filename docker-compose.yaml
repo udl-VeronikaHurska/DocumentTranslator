@@ -11,14 +11,14 @@ services:
     volumes:
       - ./translator_backend:/translator_backend
     restart: always
-
   telegram_bot:
     build:
       context: ./telegram_bot
     image: telegram_bot_image
     container_name: telegram_bot_1
     environment:
-      - TELEGRAM_BOT_TOKEN=
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
     volumes:
       - ./telegram_bot:/telegram_bot
     restart: always
+    command: ["bash", "-c", "pip install -r requirements.txt && python start_bot.py"]
