@@ -25,7 +25,6 @@ class Translator:
         else:
             src_lang_code = settings.helsinki_lang_codes[self.src_lang]
             tgt_lang_code = settings.helsinki_lang_codes[self.tgt_lang]
-            print(f"USING: Helsinki-NLP/opus-mt-{src_lang_code}-{tgt_lang_code}")
             return f"Helsinki-NLP/opus-mt-{src_lang_code}-{tgt_lang_code}"
 
     def _translate_facebook(self, text):
@@ -52,6 +51,5 @@ class Translator:
         outputs = model.generate(inputs)
 
         translated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-        print(translated_text)
         return translated_text
 
