@@ -10,5 +10,6 @@ uvicorn
 python-multipart
 olefile
 docx
-requests
-aiogram
+protobuf
+cohere
+python-dotenv

@@ -6,19 +6,21 @@ services:
       context: ./translator_backend
     image: translator_backend_image
     container_name: translator_backend_1
+    environment:
+      COHERE_API_KEY: ${COHERE_API_KEY} 
     ports:
       - "8000:8000"
     volumes:
       - ./translator_backend:/translator_backend
     restart: always
-
   telegram_bot:
     build:
       context: ./telegram_bot
     image: telegram_bot_image
     container_name: telegram_bot_1
     environment:
-      - TELEGRAM_BOT_TOKEN=7317005731:AAHXdIWVowWZ1OV6ErujJDH-5WSBVWso8iE
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
     volumes:
       - ./telegram_bot:/telegram_bot
     restart: always
+    command: ["bash", "-c", "pip install -r requirements.txt && python start_bot.py"]

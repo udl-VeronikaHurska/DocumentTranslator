@@ -1,0 +1,10 @@
+.env
+translator_backend/api/services/__pycache__
+translator_backend/api/__pycache__
+translator_backend/api/routes/__pycache__
+telegram_bot/__pycache__
+telegram_bot/handlers/__pycache__
+test.py
+test1.docx
+translator.pem
+translator_backend/logs
